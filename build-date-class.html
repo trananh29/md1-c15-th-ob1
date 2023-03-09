@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>build date class</title>
+</head>
+<body>
+<script>
+  function Date(day,month,year) {
+    this.day=day;
+    this.month=month;
+    this.year= year;
+    this.getDay= function () {
+      return this.day;
+    }
+    this.getMonth= function () {
+        return this.month;
+    }
+    this.getYear= function () {
+      return this.year;
+    }
+    this.setDay= function (day) {
+      this.day=day;
+    }
+    this.setMonth= function (month) {
+      this.month=month;
+    }
+    this.setYear= function (year) {
+      this.year=year;
+    }
+  }
+  let day1 =new Date(2,2,2007);
+  // let day=day1.getDay();
+  // let month=day1.getMonth();
+  // let year=day1.getYear();
+
+  day1.setDay(10);
+  day1.setMonth(12);
+  day1.setYear(2022);
+
+  alert(day1.getDay() + '/' + day1.getMonth() +'/'+ day1.getYear() )
+
+
+</script>
+</body>
+</html>
